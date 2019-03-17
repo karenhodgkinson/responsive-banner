@@ -1,31 +1,57 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
 html {
-  box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-
   font-family: Georgia, serif;
   color: #fff;
   background-color: #495562;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
 .btn, .btn-ghost {
   color: #fff;
   border-color: #97a49b;
+}
+
+.btn:hover, .btn-ghost:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #fff;
+}
+
+.text {
+  background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9));
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner {
+    max-height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .btn, .btn-ghost {
+    color: #fff;
+    border-color: #efefef;
+  }
+
+  .cruise {
+    position: absolute;
+    right: .05em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .text {
+    left: 150px;
+  }
+
+  .wrapper {
+    left: 150px;
+  }
+
 }
